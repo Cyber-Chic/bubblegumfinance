@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: black;
+    }
+
+    h1 {
+     color: black;
+	text-align: center;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+	background-color: pink;
+    }
+
+    h2 {
+     color: hotpink;
+     text-align: center;
+     background-color: white;
+    }
+
+    /* The grid: Four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    .column img:hover {
+      opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* The expanding image container */
+    .container {
+      position: relative;
+      display: none;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      color: white;
+      font-size: 20px;
+    }
+
+    /* Closable button inside the expanded image */
+    .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2></h2>
+
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+      <h1>Target Date Funds</h1><a href="https://youtu.be/tJwaYADIUJA"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/06/pexels-photo-669622.jpeg?w=1200&h=900&crop=1" alt="Image 1" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <h1>Credit Scores</h1><a href="https://www.youtube.com/watch?v=NBTHO1wrh1Y"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/09/pexels-photo-210742.jpeg?w=1200&h=900&crop=1" alt="Image 2" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <h1>Roth IRA</h1><a href="https://www.youtube.com/shorts/8LS7pPyyvZ0"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/9c6db-bf5eb5d4973f47119364c3e64d067003.jpg?w=1200&h=900&crop=1" alt="Image 3" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <h1>Opening a Roth IRA</h1><a href="https://youtu.be/488hvi74HOI"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/pexels-photo-210574.jpeg?w=1200&h=900&crop=1" alt="Image 4" style="width:100%"></a>
+    </div>
+  </div>
+
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+      <h1>Types of 401k's</h1><a href="https://youtu.be/fEH8hToATFw"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/08/pexels-photo-4386372.jpeg?w=1200&h=900&crop=1" alt="Image 1" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <h1>401k Investments</h1><a href="https://youtu.be/gnkIdUWXv1U"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/07/pexels-photo-12969343.jpeg?w=1200&h=900&crop=1" alt="Image 2" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <h1>401k Matching</h1><a href="https://www.youtube.com/watch?v=ZhQXKgKUTPk&t=8s"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/08/pexels-photo-186464.jpeg?w=1200&h=900&crop=1" alt="Image 3" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <h1>Index Funds</h1><a href="https://youtu.be/WpOtrjnRjXQ"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/07/pexels-photo-9755390.jpeg?w=1200&h=900&crop=1" alt="Image 4" style="width:100%"></a>
+    </div>
+  </div>
+
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+      <h1>VTSAX Index Fund</h1><a href="https://youtu.be/gSnpB9umYgE"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/07/pexels-photo-187041.jpeg?w=1200&h=900&crop=1" alt="Image 1" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <h1>The Latte Factor Book</h1><a href="https://youtu.be/fYoGeRtviio"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/pexels-photo-1148399.jpeg?w=800&h=600&crop=1" alt="Image 2" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <h1>Brokerage Accounts</h1><a href="https://youtu.be/HX3-HkcU51c"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/06/pexels-photo-356043.jpeg?w=1200&h=900&crop=1" alt="Image 3" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <h1>Funds VS ETF's</h1><a href="https://www.youtube.com/watch?v=owBIZffcmF8&ab_channel=JoshuaMayo"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/a6018-34aef00a568e4c7db32033c39660ed8d.jpg?w=1200&h=900&crop=1" alt="Image 4" style="width:100%"></a>
+    </div>
+  </div>
+
+</body>
+</html>
