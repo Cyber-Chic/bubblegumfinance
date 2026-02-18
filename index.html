@@ -74,6 +74,65 @@
       font-size: 35px;
       cursor: pointer;
     }
+
+
+
+	    body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace; /* Terminal Font */
+    background: linear-gradient(135deg, #1a1a2e 0%, #83a4d4 50%, #e247ce 100%);
+    background-attachment: fixed;
+    color: white;
+  }
+
+  /* The Glassmorphism "Data Packets" */
+  .column h1 {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(226, 71, 206, 0.8);
+    transition: 0.3s;
+  }
+
+  /* The Hover Effect: "Signal Lock" */
+  .column:hover h1 {
+    background: rgba(226, 71, 206, 0.2);
+    border: 1px solid #e247ce;
+    box-shadow: 0 0 20px rgba(226, 71, 206, 0.5);
+    transform: translateY(-5px);
+  }
+
+  .column img {
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: 0.4s;
+    filter: grayscale(30%) brightness(0.9);
+  }
+
+  .column:hover img {
+    filter: grayscale(0%) brightness(1.1);
+    border: 2px solid #e247ce;
+    box-shadow: 0 0 25px #e247ce;
+  }
+
+  /* Signal Status Footer */
+  .status-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+  }
   </style>
 </head>
 
@@ -132,3 +191,4 @@
 
 </body>
 </html>
+
