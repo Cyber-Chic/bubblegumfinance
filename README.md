@@ -40,7 +40,19 @@ The Archive presents this index as a "Signal Hub" for those navigating the compl
 
 ### [ 🛰️ ARCHIVE_HUB ]
 **The Moore Signal Archive // Independent Inquiry Management**  
-**CONTACT:** [themoorearchive@proton.me](mailto:themoorearchive@proton.me)
+*Bridging the gap between digital code and physical reality.*
 
-**SIGNAL STATUS: 🟢 NOMINAL // PI: A N MOORE // (PENDING) LLC**  
+**Engagements are accepted for the following specialized inquiries:**
+*   **Guest Speaking:** "The NASA Citizen Scientist: A Creative Volunteer’s Experience."
+*   **Literary Talks:** "The Art of the Dispatch: Contemporary Haikus as Visual Artifacts."
+*   **Creative Process:** "Aural Decryption: Transforming Soundscapes into Micro-Poetry."
+*   **Literary Advocacy:** "The Quiet Signal: Fostering Community Literacy through Independent Artifact Drops."
+
+**➡️ CONTACT:** [themoorearchive@proton.me](mailto:themoorearchive@proton.me)  
+**OFFICE:** 2389 Main St, Ste 100, Glastonbury, CT 06033
+
+---
+**SIGNAL STATUS: 🟢 NOMINAL**  
+**PI: A N MOORE // (PENDING) THE MOORE SIGNAL ARCHIVE LLC**  
+
 > *“To architect a life where data has a soul, and science has a signature.”*
