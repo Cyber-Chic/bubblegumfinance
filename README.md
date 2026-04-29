@@ -39,7 +39,7 @@ The Archive presents this index as a "Signal Hub" for those navigating the compl
 ---
 
 ### [ 🛰️ ARCHIVE_HUB ]
-**The Moore Signal Archive // Independent Inquiry Management**  
+**The Moore Signal Archive LLC // Independent Inquiry Management**  
 *Bridging the gap between digital code and physical reality.*
 
 **Engagements are accepted for the following specialized inquiries:**
@@ -53,6 +53,6 @@ The Archive presents this index as a "Signal Hub" for those navigating the compl
 
 ---
 **SIGNAL STATUS: 🟢 NOMINAL**  
-**PI: A N MOORE // (PENDING) THE MOORE SIGNAL ARCHIVE LLC**  
+**PI: A N MOORE // THE MOORE SIGNAL ARCHIVE LLC**  
 
 > *“I want to live as though I traveled back in time... To this very moment.”*
