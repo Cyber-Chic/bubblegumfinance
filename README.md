@@ -1,58 +1,52 @@
 # 🍬 Bubblegum Finance // THE MOORE SIGNAL
-**STATUS: ARCHIVAL INDEX // RESOURCE REPOSITORY**
 
-<br>
+**STATUS: RESOURCE REPOSITORY // ACTIVE ARCHIVE**
 
-**Bubblegum Finance** is an independent inquiry into the accessibility of financial literacy. This project serves as a **Curated Research Index**, organizing high-fidelity educational media into a centralized, low-friction directory.
-
-<br>
+`Bubblegum Finance` is an independent financial literacy project. It serves as a curated directory that organizes high-quality educational media into a centralized, low-friction index.
 
 ---
 
-## 🛰️ THE INQUIRY: DATA ACCESSIBILITY
-The Archive presents this index as a "Signal Hub" for those navigating the complexities of personal finance. It is helpful because it:
+## 🛰️ Project Objective
 
-*   **Filters the Noise:** Centralizes vetted external media (YouTube) into a single, clean terminal.
-*   **Prioritizes Literacy:** Focuses on the **Bogleheads Framework** and broad-market fundamentals.
-*   **Promotes Autonomy:** Acts as a launching pad for independent study rather than a final destination.
+This repository acts as a clean terminal for navigating personal finance fundamentals, designed to simplify independent study:
 
-### [ 🔘 ACCESS THE INDEX: BUBBLEGUM FINANCE TERMINAL ](https://cyber-chic.github.io/bubblegumfinance/)
-
-<br>
+*   **Filter the Noise:** Centralizes vetted external media into a single, organized directory.
+*   **Prioritize Literacy:** Focuses on the Bogleheads framework, broad-market index funds, and foundational long-term investing principles.
+*   **Promote Autonomy:** Serves as an accessible launchpad for users to build confidence in managing their own financial paths.
 
 ---
 
-## 🛡️ SYSTEM PROTOCOLS & LIABILITY SHIELD
+## 📁 Access the Hub
 
-*   **NON-COMMERCIAL INQUIRY:** This repository is an independent, non-commercial educational study. It is provided for research purposes only.
-*   **NO FINANCIAL ADVICE:** The Principal Investigator (PI) is **not** a financial professional. Content within this index consists of external third-party media and does not constitute financial, investment, or legal advice.
-*   **USER RESPONSIBILITY:** By interacting with this Archive Module, you acknowledge that you are **SOLELY & LEGALLY** responsible for your own financial decisions. The Archive and its PI assume no liability for actions taken based on this index.
-
-<br>
+*   **[🔘 Bubblegum Finance Terminal](https://cyber-chic.github.io/bubblegumfinance/)** — Curated Resource Index
 
 ---
 
-## 🤖 SYNTHETIC CO-PILOT: COLLABORATION
-**SYSTEM ARCHITECTS: A N Moore + Gemini Neural Models**
-*The interface and architecture of this index were manifest through an iterative exchange between human analytical praxis and AI-driven precision.*
+## 🤖 Architecture & Collaboration
+
+**Lead Architect:** A. N. Moore  
+**Co-Pilot Engine:** Gemini Neural Models  
+
+This archive represents a collaborative framework between human design and artificial intelligence to maintain a clean, minimalist digital aesthetic.
 
 ---
 
-### [ 🛰️ ARCHIVE_HUB ]
-**The Moore Signal Archive LLC // Independent Inquiry Management**  
-*Bridging the gap between digital code and physical reality.*
+## 🛡️ Project Protocols & Liability Shield
 
-**Engagements are accepted for the following specialized inquiries:**
-*   **Guest Speaking:** "The NASA Citizen Scientist: A Creative Volunteer’s Experience."
-*   **Literary Talks:** "The Art of the Dispatch: Contemporary Haikus as Visual Artifacts."
-*   **Creative Process:** "Aural Decryption: Transforming Soundscapes into Micro-Poetry."
-*   **Strategic Signature:** "Merging passion and research to architect a meaningful life."
-
-**➡️ CONTACT:** [themoorearchive@proton.me](mailto:themoorearchive@proton.me)  
-**OFFICE:** 2389 Main St, Ste 100, Glastonbury, CT 06033
+*   **Educational Inquiry:** This repository is an independent, non-commercial educational resource. 
+*   **No Financial Advice:** The Principal Investigator (PI) is not a licensed financial professional. The content indexed here consists of external third-party media and does not constitute financial, investment, tax, or legal advice.
+*   **User Responsibility:** You are solely and legally responsible for your own financial decisions. The Archive and its PI assume no liability for choices or actions taken based on the resources in this index.
 
 ---
-**SIGNAL STATUS: 🟢 NOMINAL**  
-**PI: A N MOORE // THE MOORE SIGNAL ARCHIVE LLC**  
 
-> *“I want to live as though I traveled back in time... To this very moment.”*
+**Managing Entity:** The Moore Signal Archive LLC (CT)  
+**Principal Investigator:** A. N. Moore  
+**Contact:** [themoorearchive@proton.me](mailto:themoorearchive@proton.me)  
+**Signal Status:** 🟢 NOMINAL  
+
+> *"I want to live as though I traveled back in time... To this very moment."*
+
+***
+<p align="center">
+  <small>© 2026 THE MOORE SIGNAL ARCHIVE LLC <br> 2389 Main St, Ste 100, Glastonbury, CT 06033</small>
+</p>
