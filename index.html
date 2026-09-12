@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Bubblegum Finance // Archival Curation Index</title>
   <style>
     * {
       box-sizing: border-box;
@@ -8,187 +10,214 @@
 
     body {
       margin: 0;
-      font-family: Arial;
-      background: linear-gradient(to right, #83a4d4, #e247ce);
+      font-family: 'Courier New', Courier, monospace;
+      background: linear-gradient(135deg, #1a1a2e 0%, #83a4d4 50%, #e247ce 100%);
+      background-attachment: fixed;
+      color: white;
+      padding-bottom: 80px;
     }
 
-    h1 {
-     color: black;
-	text-align: center;
-	box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
-	background-color: white;
+    .disclaimer-banner {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      line-height: 1.4;
     }
 
-    h2 {
-     color: white;
-     text-align: center;
-     background-color: white;
+    .disclaimer-banner a {
+      color: #ff79c6;
+      text-decoration: underline;
     }
 
-    /* The grid: Four equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 25%;
-      padding: 10px;      
+    .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    /* Style the images inside the grid */
-    .column img {
-      opacity: 0.8;
-      cursor: pointer;
+    .card {
+      flex: 1 1 calc(25% - 25px);
+      min-width: 220px;
+      max-width: 280px;
+      text-align: center;
+    }
+
+    .card h1 {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 15px 10px;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(226, 71, 206, 0.8);
+      margin-bottom: 15px;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+    }
+
+    .card:hover h1 {
+      background: rgba(226, 71, 206, 0.2);
+      border: 1px solid #e247ce;
+      box-shadow: 0 0 20px rgba(226, 71, 206, 0.5);
+      transform: translateY(-3px);
+    }
+
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
       border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      transition: 0.4s;
+      filter: grayscale(30%) brightness(0.9);
     }
 
-    .column img:hover {
-      opacity: 1;
+    .card:hover img {
+      filter: grayscale(0%) brightness(1.1);
+      border: 2px solid #e247ce;
+      box-shadow: 0 0 25px #e247ce;
     }
 
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
+    .status-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.9);
+      padding: 12px;
+      text-align: center;
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
-
-    /* The expanding image container */
-    .container {
-      position: relative;
-      display: none;
-    }
-
-    /* Expanding image text */
-    #imgtext {
-      position: absolute;
-      bottom: 15px;
-      left: 15px;
-      color: white;
-      font-size: 20px;
-    }
-
-    /* Closable button inside the expanded image */
-    .closebtn {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      color: white;
-      font-size: 35px;
-      cursor: pointer;
-    }
-
-
-
-	    body {
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace; /* Terminal Font */
-    background: linear-gradient(135deg, #1a1a2e 0%, #83a4d4 50%, #e247ce 100%);
-    background-attachment: fixed;
-    color: white;
-  }
-
-  /* The Glassmorphism "Data Packets" */
-  .column h1 {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 20px 10px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #fff;
-    text-shadow: 0 0 10px rgba(226, 71, 206, 0.8);
-    transition: 0.3s;
-  }
-
-  /* The Hover Effect: "Signal Lock" */
-  .column:hover h1 {
-    background: rgba(226, 71, 206, 0.2);
-    border: 1px solid #e247ce;
-    box-shadow: 0 0 20px rgba(226, 71, 206, 0.5);
-    transform: translateY(-5px);
-  }
-
-  .column img {
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    transition: 0.4s;
-    filter: grayscale(30%) brightness(0.9);
-  }
-
-  .column:hover img {
-    filter: grayscale(0%) brightness(1.1);
-    border: 2px solid #e247ce;
-    box-shadow: 0 0 25px #e247ce;
-  }
-
-  /* Signal Status Footer */
-  .status-bar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.8);
-    padding: 10px;
-    text-align: center;
-    font-size: 0.8rem;
-    letter-spacing: 3px;
-  }
   </style>
 </head>
 
 <body>
 
-  <h2></h2>
-
-  <!-- The four columns -->
-  <div class="row">
-    <div class="column">
-      <h1>Target Date <br> Funds</h1><a href="https://youtu.be/tJwaYADIUJA"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/06/pexels-photo-669622.jpeg?w=1200&h=900&crop=1" alt="Image 1" style="width:100%"></a>
-    </div>
-    <div class="column">
-      <h1>Credit <br> Scores</h1><a href="https://www.youtube.com/watch?v=NBTHO1wrh1Y"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/09/pexels-photo-210742.jpeg?w=1200&h=900&crop=1" alt="Image 2" style="width:100%"></a>
-    	<br>
-    </div>
-    <div class="column">
-      <h1>Roth <br> IRA</h1><a href="https://www.youtube.com/shorts/8LS7pPyyvZ0"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/9c6db-bf5eb5d4973f47119364c3e64d067003.jpg?w=1200&h=900&crop=1" alt="Image 3" style="width:100%"></a>
-    </div>
-    <div class="column">
-      <h1>Opening a <br> Roth IRA</h1><a href="https://youtu.be/488hvi74HOI"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/pexels-photo-210574.jpeg?w=1200&h=900&crop=1" alt="Image 4" style="width:100%"></a>
-    </div>
+  <div class="disclaimer-banner">
+    <strong>Notice:</strong> This index houses curated learning milestones optimized exclusively for early financial literacy, wealth preservation, and behavioral asset allocation research. 
+    <br><br>
+    <em>Disclaimer: Everything shared in this archive is strictly for educational purposes and personal research. This platform does not provide professional financial advice, and nothing here should be taken as an investment recommendation. Always verify information and do your own research!</em>
   </div>
 
-  <!-- The four columns -->
-  <div class="row">
-    <div class="column">
-      <h1>Types of <br> 401k's</h1><a href="https://youtu.be/fEH8hToATFw"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/08/pexels-photo-4386372.jpeg?w=1200&h=900&crop=1" alt="Image 1" style="width:100%"></a>
+  <div class="grid-container">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <h1>Target Date Funds</h1>
+      <a href="https://youtu.be/tJwaYADIUJA" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/06/pexels-photo-669622.jpeg?w=1200&h=900&crop=1" alt="Target Date Funds">
+      </a>
     </div>
-    <div class="column">
-      <h1>401k <br> Investments</h1><a href="https://youtu.be/gnkIdUWXv1U"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/07/pexels-photo-12969343.jpeg?w=1200&h=900&crop=1" alt="Image 2" style="width:100%"></a>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <h1>Credit Scores</h1>
+      <a href="https://www.youtube.com/watch?v=NBTHO1wrh1Y" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/09/pexels-photo-210742.jpeg?w=1200&h=900&crop=1" alt="Credit Scores">
+      </a>
     </div>
-    <div class="column">
-      <h1>401k <br> Matching</h1><a href="https://www.youtube.com/watch?v=ZhQXKgKUTPk&t=8s"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/08/pexels-photo-186464.jpeg?w=1200&h=900&crop=1" alt="Image 3" style="width:100%"></a>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <h1>Roth IRA</h1>
+      <a href="https://www.youtube.com/shorts/8LS7pPyyvZ0" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/9c6db-bf5eb5d4973f47119364c3e64d067003.jpg?w=1200&h=900&crop=1" alt="Roth IRA">
+      </a>
     </div>
-    <div class="column">
-      <h1>Index <br> Funds</h1><a href="https://youtu.be/WpOtrjnRjXQ"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/07/pexels-photo-9755390.jpeg?w=1200&h=900&crop=1" alt="Image 4" style="width:100%"></a>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <h1>Opening a Roth IRA</h1>
+      <a href="https://youtu.be/488hvi74HOI" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/pexels-photo-210574.jpeg?w=1200&h=900&crop=1" alt="Opening an Account">
+      </a>
     </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <h1>Types of 401k's</h1>
+      <a href="https://youtu.be/fEH8hToATFw" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/08/pexels-photo-4386372.jpeg?w=1200&h=900&crop=1" alt="401k Classifications">
+      </a>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+      <h1>401k Investments</h1>
+      <a href="https://youtu.be/gnkIdUWXv1U" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/07/pexels-photo-12969343.jpeg?w=1200&h=900&crop=1" alt="401k Strategy">
+      </a>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card">
+      <h1>401k Matching</h1>
+      <a href="https://www.youtube.com/watch?v=ZhQXKgKUTPk&t=8s" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/08/pexels-photo-186464.jpeg?w=1200&h=900&crop=1" alt="Employer Contribution">
+      </a>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card">
+      <h1>Index Funds</h1>
+      <a href="https://youtu.be/WpOtrjnRjXQ" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/07/pexels-photo-9755390.jpeg?w=1200&h=900&crop=1" alt="Index Tracking">
+      </a>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card">
+      <h1>VTSAX Index Fund</h1>
+      <a href="https://youtu.be/gSnpB9umYgE" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/07/pexels-photo-187041.jpeg?w=1200&h=900&crop=1" alt="VTSAX Model">
+      </a>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="card">
+      <h1>The Latte Factor Book</h1>
+      <a href="https://youtu.be/fYoGeRtviio" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/pexels-photo-1148399.jpeg?w=800&h=600&crop=1" alt="Literature Analysis">
+      </a>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="card">
+      <h1>Brokerage Accounts</h1>
+      <a href="https://youtu.be/HX3-HkcU51c" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/06/pexels-photo-356043.jpeg?w=1200&h=900&crop=1" alt="Account Setup">
+      </a>
+    </div>
+
+    <!-- Card 12 -->
+    <div class="card">
+      <h1>Funds VS ETF's</h1>
+      <a href="https://www.youtube.com/watch?v=owBIZffcmF8&ab_channel=JoshuaMayo" target="_blank">
+        <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/a6018-34aef00a568e4c7db32033c39660ed8d.jpg?w=1200&h=900&crop=1" alt="Asset Vehicle Metrics">
+      </a>
+    </div>
+
   </div>
 
-  <!-- The four columns -->
-  <div class="row">
-    <div class="column">
-      <h1>VTSAX Index <br> Fund</h1><a href="https://youtu.be/gSnpB9umYgE"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/07/pexels-photo-187041.jpeg?w=1200&h=900&crop=1" alt="Image 1" style="width:100%"></a>
-    </div>
-    <div class="column">
-      <h1>The Latte <br> Factor Book</h1><a href="https://youtu.be/fYoGeRtviio"> <img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/pexels-photo-1148399.jpeg?w=800&h=600&crop=1" alt="Image 2" style="width:100%"></a>
-    </div>
-    <div class="column">
-      <h1>Brokerage <br> Accounts</h1><a href="https://youtu.be/HX3-HkcU51c"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/06/pexels-photo-356043.jpeg?w=1200&h=900&crop=1" alt="Image 3" style="width:100%"></a>
-    </div>
-    <div class="column">
-      <h1>Funds VS <br> ETF's</h1><a href="https://www.youtube.com/watch?v=owBIZffcmF8&ab_channel=JoshuaMayo"><img src="https://stealthwealth.finance.blog/wp-content/uploads/2022/04/a6018-34aef00a568e4c7db32033c39660ed8d.jpg?w=1200&h=900&crop=1" alt="Image 4" style="width:100%"></a>
-    </div>
+  <div class="status-bar">
+    STATUS: ARCHIVAL INDEX ONLINE // OPEN ACCESS EDUCATION
   </div>
 
 </body>
 </html>
-
